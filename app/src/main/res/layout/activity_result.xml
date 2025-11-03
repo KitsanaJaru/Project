@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_dark"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textViewCongrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎉CONGRATULATIONS!🎉"
+        android:textSize="18dp"
+        android:textColor="@color/lime"
+        android:fontFamily="@font/press_start_2p"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Round 123"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/press_start_2p"
+        app:layout_constraintTop_toTopOf="@id/textViewCongrats"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:id="@+id/buttonPlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY AGAIN"
+        android:textSize="20dp"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/purple_mid"
+        android:fontFamily="@font/press_start_2p"
+        app:layout_constraintTop_toTopOf="@id/textViewResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
